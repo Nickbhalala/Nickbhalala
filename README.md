@@ -14,7 +14,7 @@ Education
 
 DePaul University, Chicago, IL
 
-Expected graduation: November 2022
+Graduation: March 2023
 
 Bachelor Of Science in Computer Science
 
