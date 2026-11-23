@@ -85,8 +85,8 @@
 
 | Project Name | Description | Technologies Used |
 | --- | --- | --- |
-| **FinLake — Cost-Optimized Lakehouse** | An Apache Iceberg lakehouse on S3 that replaced an $18K/month Redshift cluster, cutting analytics infrastructure cost by 64%, fully provisioned with Terraform. | `Apache Iceberg` `AWS S3` `Athena` `Glue` `Terraform` |
-| **VisionScale — Image Recognition as a Service** | A face recognition service on AWS with custom load balancers that scale worker instances automatically based on queue depth. | `Python` `AWS EC2` `SQS` `S3` `Node.js` `React` |
+| **FinLake — Cost-Optimized Lakehouse** | An Apache Iceberg lakehouse on S3 with MERGE upserts, month-end audit snapshots and Athena; partition and column pruning cut bytes scanned by 94% in the included benchmark. Provisioned with Terraform. | `Apache Iceberg` `PySpark` `AWS S3` `Athena` `Glue` `Terraform` |
+| **VisionScale — Image Recognition as a Service** | A face recognition service on AWS with a custom autoscaler that adds and removes worker instances based on SQS queue depth. | `Python` `OpenCV` `AWS EC2` `SQS` `S3` `Node.js` `React` `Terraform` |
 
 ---
 
