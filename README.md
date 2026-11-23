@@ -87,6 +87,12 @@
 | --- | --- | --- |
 | **FinLake — Cost-Optimized Lakehouse** | An Apache Iceberg lakehouse on S3 with MERGE upserts, month-end audit snapshots and Athena; partition and column pruning cut bytes scanned by 94% in the included benchmark. Provisioned with Terraform. | `Apache Iceberg` `PySpark` `AWS S3` `Athena` `Glue` `Terraform` |
 | **VisionScale — Image Recognition as a Service** | A face recognition service on AWS with a custom autoscaler that adds and removes worker instances based on SQS queue depth. | `Python` `OpenCV` `AWS EC2` `SQS` `S3` `Node.js` `React` `Terraform` |
+| **[SheetGPT](https://github.com/Nickbhalala/SheetGPT) — LLM Analytics Assistant** | Ask questions about CSV/Excel data in plain English; an LLM writes SQL and a validation layer checks it is read-only and uses real columns before it runs, with a repair loop on errors. | `Python` `OpenAI API` `sqlglot` `SQLite` `FastAPI` |
+| **[CloudStream](https://github.com/Nickbhalala/CloudStream) — Real-Time Event Pipeline** | Kinesis → Lambda → DynamoDB with exactly-once per-minute aggregates, partial-batch retries, dead-lettering and CloudWatch alarms. | `AWS Kinesis` `Lambda` `DynamoDB` `SQS` `CloudWatch` `AWS SAM` |
+| **[Customer360](https://github.com/Nickbhalala/Customer360) — Customer Data Lake & Features** | PySpark bronze/silver/gold pipeline that deduplicates customers, enforces data quality gates and builds a PII-free ML feature table (RFM, churn). | `PySpark` `AWS S3` `Parquet` `EMR` `Glue` |
+| **[TravelSwarm](https://github.com/Nickbhalala/TravelSwarm) — Multi-Agent Itinerary Planner** | FastAPI gateway and RabbitMQ-driven workers running a CrewAI crew on Gemini (Vertex AI), with validated output, retries and PostgreSQL storage. | `CrewAI` `Gemini` `RabbitMQ` `PostgreSQL` `FastAPI` `Docker` |
+| **[BookTable](https://github.com/Nickbhalala/BookTable) — Restaurant Booking System** | Spring Boot + MongoDB API with JWT auth and role-based access, race-safe table booking, and a React frontend. | `Java` `Spring Boot` `MongoDB` `React` `JWT` `GitHub Actions` |
+| **[CodeRenew](https://github.com/Nickbhalala/CodeRenew) — Legacy C++ Modernizer** | LLM prompt chain that modernizes legacy C++; each rewrite must compile and pass the project's tests before it is kept. | `Python` `OpenAI API` `C++` `g++/clang++` |
 
 ---
 
